@@ -1,6 +1,16 @@
+import Hero from "./Hero";
+import Testimonials from "./Testimonials";
+import Specials from "./Specials";
+import About from "./About";
+
 const Main = () => {
     return (
-        <main></main>
+        <main>
+            <Hero/>
+            <Specials/>
+            <Testimonials/>
+            <About/>
+        </main>
     );
 }
 

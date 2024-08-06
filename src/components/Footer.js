@@ -2,9 +2,11 @@ import logo2 from '../images/logo2.png';
 const Footer = () => {
     return (
         <footer>
-            <img src={logo2} alt="logo"></img>
+            <div id='footerLogoDiv'>
+                <img src={logo2} alt="logo"></img>
+            </div>
             <div>
-                <h3>Doormat Navigations</h3>
+                <h4>Doormat Navigations</h4>
                 <ul>
                     <li>
                         <a href="/#home">Home</a>
@@ -27,32 +29,28 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-                <h3>Contact</h3>
-                    <ul>
-                        <li>
-                            <a href="/#Address">Address</a>
-                        </li>
-                        <li>
-                            <a href="/#PhoneNumber">Phone Number</a>
-                        </li>
-                        <li>
-                            <a href="/#Mail">Mail</a>
-                        </li>
-                    </ul>
-                    <ul>
+                <h4>Contact</h4>
+                <ul>
+                    <li>
+                        <a href="/#Address">Address</a>
+                    </li>
+                    <li>
+                        <a href="/#PhoneNumber">Phone Number</a>
+                    </li>
+                    <li>
+                        <a href="/#Mail">Mail</a>
+                    </li>
                 </ul>
             </div>
             <div>
-                <h3>Social Media Links</h3>
-                    <ul>
-                        <li>
-                            <a href="/#Instagram">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="/#Youtube">Youtube</a>
-                        </li>
-                    </ul>
-                    <ul>
+                <h4>Social Media Links</h4>
+                <ul>
+                    <li>
+                        <a href="/#Instagram">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="/#Youtube">Youtube</a>
+                    </li>
                 </ul>
             </div>
         </footer>
