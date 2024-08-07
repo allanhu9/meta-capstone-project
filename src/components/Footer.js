@@ -1,4 +1,6 @@
 import logo2 from '../images/logo2.png';
+import {Link} from 'react-router-dom';
+
 const Footer = () => {
     return (
         <footer>
@@ -9,7 +11,7 @@ const Footer = () => {
                 <h4>Doormat Navigations</h4>
                 <ul>
                     <li>
-                        <a href="/#home">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <a href="/#About">About</a>
@@ -18,7 +20,7 @@ const Footer = () => {
                         <a href="/#Menu">Menu</a>
                     </li>
                     <li>
-                        <a href="/#Reservations">Reservations</a>
+                        <Link to="/booking">Reservations</Link>
                     </li>
                     <li>
                         <a href="/#OrderOnline">Order Online</a>

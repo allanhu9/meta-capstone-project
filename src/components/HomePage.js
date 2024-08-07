@@ -3,7 +3,7 @@ import Testimonials from "./Testimonials";
 import Specials from "./Specials";
 import About from "./About";
 
-const Main = () => {
+const HomePage = () => {
     return (
         <main>
             <Hero/>
@@ -11,7 +11,7 @@ const Main = () => {
             <Testimonials/>
             <About/>
         </main>
-    );
+    )
 }
 
-export default Main;
+export default HomePage;
