@@ -10,19 +10,19 @@ const Testimonials = () => {
             description: 'description',
         },
         {
-            name: 'Razi',
+            name: 'Jay',
             rating: '5 Stars',
             imgSrc: personImg,
             description: 'description',
         },
         {
-            name: 'Razi',
+            name: 'Anastasia',
             rating: '5 Stars',
             imgSrc: personImg,
             description: 'description',
         },
         {
-            name: 'Razi',
+            name: 'Bill',
             rating: '5 Stars',
             imgSrc: personImg,
             description: 'description',

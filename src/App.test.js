@@ -1,8 +1,57 @@
-import { render, screen } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import App from './App';
+import BookingPage from './components/BookingPage';
+import { BrowserRouter } from 'react-router-dom';
+import {fetchAPI} from './components/api.js';
 
-test('renders learn react link', () => {
+const mockUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => mockUsedNavigate,
+}));
+
+test('Renders the BookingForm heading', () => {
+  render(
+  <BrowserRouter>
+    <BookingPage available={['12:00']} />
+  </BrowserRouter>
+  );
+  const headingElement = screen.getByText("Book Now");
+  expect(headingElement).toBeInTheDocument();
+})
+test('testing initializeTimes function', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+  const bookingLink = screen.getByTestId('bookingLink');
+  fireEvent.click(bookingLink);
+  const timeOptions = screen.getAllByTestId('timeOption');
+  const expectedTimeOptions = fetchAPI(new Date());
+  expect(timeOptions).toHaveLength(expectedTimeOptions.length);
+  for (let i = 0; i < expectedTimeOptions.length; i++) {
+    expect(expectedTimeOptions[i]).toMatch(timeOptions[i].value);
+  }
+})
+
+test('testing updateTimes function', () => {
+  render(<App/>);
+  const bookingLink = screen.getByTestId('bookingLink');
+  fireEvent.click(bookingLink);
+  const date = screen.getByLabelText('Choose date');
+  fireEvent.change(date, {target: {value: '2024-08-20'}});
+  const expectedTimeOptions = fetchAPI(new Date('2024-08-20'));
+  const timeOptions = screen.getAllByTestId('timeOption');
+
+  expect(timeOptions).toHaveLength(expectedTimeOptions.length);
+  for (let i = 0; i < expectedTimeOptions.length; i++) {
+    expect(expectedTimeOptions[i]).toMatch(timeOptions[i].value);
+  }
+})
+
+test('submit form', () => {
+  render(<App />);
+  const bookingLink = screen.getByTestId('bookingLink');
+  fireEvent.click(bookingLink);
+  const submitButton = screen.getByTestId('submit');
+  fireEvent.click(submitButton);
+  //const bookingFeedback = screen.getByTestId('bookingFeedback');
+  //expect(bookingFeedback).toBeInTheDocument();
+})

@@ -13,7 +13,7 @@ const Specials = () => {
             Duis auctor at enim sed bibendum.`
         },
         {
-            name: 'Greek Salad',
+            name: 'Bruschetta',
             imgSrc: Salad,
             price: '$12.99',
             description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -21,7 +21,7 @@ const Specials = () => {
             Duis auctor at enim sed bibendum.`
         },
         {
-            name: 'Greek Salad',
+            name: 'Lemon Dessert',
             imgSrc: Salad,
             price: '$12.99',
             description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.

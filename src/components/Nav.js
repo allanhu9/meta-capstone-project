@@ -14,7 +14,7 @@ const Nav = () => {
                     <a href="/#Menu">Menu</a>
                 </li>
                 <li>
-                    <Link to="/booking">Reservations</Link>
+                    <Link to="/booking" data-testid="bookingLink">Reservations</Link>
                 </li>
                 <li>
                     <a href="/#OrderOnline">Order Online</a>

@@ -214,6 +214,7 @@ Footer ul {
   border-radius: 16px;
   width: 240px;
   height: 160px;
+  box-shadow: 2px 2px 5px var(--offblack);
 }
 .testCard > div {
   display: flex;
@@ -360,4 +361,7 @@ Footer ul {
   top: 150px;
   left: 50px;
   z-index: -1;
+}
+#bookingMain {
+  background-color: var(--offwhite);
 }
