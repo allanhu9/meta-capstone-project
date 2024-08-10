@@ -10,6 +10,10 @@ The pages that were included for this project include the home page and the rese
 
 The page was designed for 1440p screens, and I intend to add responsiveness for smaller sized screens as well.
 
+## Figma Design
+
+https://www.figma.com/design/OJ5kf4YHkxAUFLAXMUr5tG/Capstone-Project?node-id=2-211&t=x3EhcTghjxLsl1bW-1
+
 ## Screenshots
 
 <img width="1171" alt="top-of-homepage" src="https://github.com/user-attachments/assets/677297c3-f9f6-42f1-87e4-c550bb9ba147">
