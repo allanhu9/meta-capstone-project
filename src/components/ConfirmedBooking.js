@@ -1,8 +1,8 @@
 const ConfirmedBooking = () => {
     return (
-        <main>
+        <main id='confirmMain'>
             <div className='bookingFeedback' data-testid='bookingFeedback'>
-                Your reservation has been booked. See you there!
+                <h1>Your reservation has been booked. See you there!</h1>
             </div>
         </main>
     );

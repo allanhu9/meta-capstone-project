@@ -8,7 +8,6 @@ import './App.css';
 import {useReducer} from 'react';
 import {fetchAPI} from './components/api.js';
 import ConfirmedBooking from "./components/ConfirmedBooking.js";
-import {format} from 'date-fns';
 
 
 function App() {

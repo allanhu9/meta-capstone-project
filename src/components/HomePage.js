@@ -5,7 +5,7 @@ import About from "./About";
 
 const HomePage = () => {
     return (
-        <main>
+        <main id="homeMain">
             <Hero/>
             <Specials/>
             <Testimonials/>

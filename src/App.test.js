@@ -16,7 +16,7 @@ test('Renders the BookingForm heading', () => {
     <BookingPage available={['12:00']} />
   </BrowserRouter>
   );
-  const headingElement = screen.getByText("Book Now");
+  const headingElement = screen.getByText("Make a Reservation");
   expect(headingElement).toBeInTheDocument();
 })
 test('testing initializeTimes function', () => {
@@ -52,6 +52,18 @@ test('submit form', () => {
   fireEvent.click(bookingLink);
   const submitButton = screen.getByTestId('submit');
   fireEvent.click(submitButton);
-  //const bookingFeedback = screen.getByTestId('bookingFeedback');
-  //expect(bookingFeedback).toBeInTheDocument();
+  const bookingFeedback = screen.getByTestId('submitted');
+  expect(bookingFeedback).toBeInTheDocument();
+})
+
+test('submit form', () => {
+  render(<App />);
+  const bookingLink = screen.getByTestId('bookingLink');
+  fireEvent.click(bookingLink);
+  const guests = screen.getByLabelText('Number of guests');
+  fireEvent.change(guests, {target: {value: -1}});
+  const submitButton = screen.getByTestId('submit');
+  fireEvent.click(submitButton);
+  const bookingFeedback = screen.queryByTestId('submitted');
+  expect(bookingFeedback).toBeNull();
 })
