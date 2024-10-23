@@ -18,7 +18,7 @@ https://www.figma.com/design/OJ5kf4YHkxAUFLAXMUr5tG/Capstone-Project?node-id=2-2
 
 <img width="1171" alt="top-of-homepage" src="https://github.com/user-attachments/assets/677297c3-f9f6-42f1-87e4-c550bb9ba147">
 
-<img width="944" alt="middle-of-homepage" src="https://github.com/user-attachments/assets/3663c7c1-6174-476c-934c-de2ddf9776e3">\
+<img width="944" alt="middle-of-homepage" src="https://github.com/user-attachments/assets/3663c7c1-6174-476c-934c-de2ddf9776e3">
 
 <img width="943" alt="bottom-of-homepage" src="https://github.com/user-attachments/assets/04d5ef3c-5c45-4951-b9e9-4dde389a2e4b">
 
